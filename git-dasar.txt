@@ -1,0 +1,63 @@
+// Initialize git
+#git init
+
+//Cek status git
+#git status
+
+// Working area -> Staging index
+# git add <file/directory>
+
+// Staging index -> Repository
+# git commit -m "entry a message"
+
+// Membatalkan pembuatan file
+#git clean -f
+
+//Membatalkan perubahan file sebelum ke staging index
+#git restore <file/directory>
+
+//Membatalkan dari staging index ke working directory
+#git restore --staged <file/directory>
+
+//Commit Log History
+#git log
+
+//Commit Log Sederhana
+#git log --oneline
+
+//Commit Log Sederhana dan Graph
+#git log --oneline --Graph
+
+// Menampilkan berubahan 
+#git show <hash1>
+
+//Compare commit
+#git diff hash1 hash2/HEAD
+
+//Difftool
+#git diftool hash hash2/head
+
+//Reset Commit --soft, --mixed, --hard
+#git reset hash
+
+// Menambah kan file lupa dicommit sebelumnya tanpa harus membuat commit baru
+#git commit --amend -m "masukkan message"
+
+// ke versi sebelumnya
+#git checkout hash -- file
+
+//melihat branch saat init
+#git branch --show-current
+
+//snapshot sebelumnya
+#git checkout hash
+//jika ingin kembali ke awal
+#git checkout nama-branch
+
+//Revert Commit fitur untuk membatalkan commit yang sudah kita lakukan dengan cara membuat commit baru
+#git revert hash
+
+// Mengetahui siapa yang menambahkan perubahan pada file
+# git blame nama-file
+
+// Git Alias
